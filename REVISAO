@@ -1,0 +1,9 @@
+import random
+
+lista = [random.randint(0, 10000)]
+
+with open ("lista_nao_ordenada.txt", "w") as arquivo:
+    for numero in lista:
+        arquivo.write (str(numero))
+
+print ("salvo em lista_nao_ordenada.txt")
